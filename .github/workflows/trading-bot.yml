@@ -8,6 +8,7 @@ on:
     # on GitHub's own servers -- that's a GitHub limitation, not something in our control.
     - cron: "*/5 * * * *"
   workflow_dispatch: {}   # lets you click "Run workflow" manually in the Actions tab
+  # schedule nudge -- re-saving this file to force GitHub to re-register the cron trigger
 
 permissions:
   contents: write   # needed so the workflow can commit the updated journal/state back
