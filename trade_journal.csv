@@ -1,1 +1,10 @@
 ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,order_id,sma_fast,sma_slow,rsi,unrealized_plpc,open_positions_before,buying_power,error
+2026-09-17T22:16:48.930643+00:00,2026-09-17T18:16:48.477894-04:00,NVDA,stock,extended,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-17T22:16:48.930724+00:00,2026-09-17T18:16:48.477894-04:00,TSLA,stock,extended,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-17T22:16:48.930804+00:00,2026-09-17T18:16:48.477894-04:00,AMD,stock,extended,HOLD,no_prior_cross_state_recorded,533.7301,,,532.48424,530.62642,76.3638704002452,,0,400000.0,
+2026-09-17T22:16:48.930829+00:00,2026-09-17T18:16:48.477894-04:00,PLTR,stock,extended,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-17T22:16:48.930843+00:00,2026-09-17T18:16:48.477894-04:00,MSTR,stock,extended,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-17T22:16:48.930856+00:00,2026-09-17T18:16:48.477894-04:00,DELL,stock,extended,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-17T22:16:49.013834+00:00,2026-09-17T18:16:48.477894-04:00,BTC/USD,crypto,24/7,HOLD,no_prior_cross_state_recorded,76471.99,,,76362.45300000001,76295.14393333333,61.877641180579424,,0,400000.0,
+2026-09-17T22:16:49.013897+00:00,2026-09-17T18:16:48.477894-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-17T22:16:49.013917+00:00,2026-09-17T18:16:48.477894-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,

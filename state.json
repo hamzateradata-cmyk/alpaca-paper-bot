@@ -1,1 +1,8 @@
-{}
+{
+  "AMD": {
+    "fast_above_slow": true
+  },
+  "BTC/USD": {
+    "fast_above_slow": true
+  }
+}
