@@ -1,0 +1,43 @@
+name: Alpaca Paper Day-Trading Bot
+
+on:
+  schedule:
+    # Every 5 minutes, all day, every day (crypto trades 24/7; the script itself
+    # decides whether stocks are in regular/extended/closed session).
+    # GitHub's cron runs in UTC and can be delayed a few minutes during high load
+    # on GitHub's own servers -- that's a GitHub limitation, not something in our control.
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}   # lets you click "Run workflow" manually in the Actions tab
+
+permissions:
+  contents: write   # needed so the workflow can commit the updated journal/state back
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: alpaca-paper-bot
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run one trading cycle
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          # Hard-pinned to the paper endpoint. Do not change this to the live API.
+          ALPACA_BASE_URL: https://paper-api.alpaca.markets
+          ALPACA_DATA_URL: https://data.alpaca.markets
+        run: python3 alpaca_paper_bot.py
+
+      - name: Commit updated journal + state
+        run: |
+          git config user.name "alpaca-paper-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add trade_journal.csv state.json
+          git diff --staged --quiet || git commit -m "Bot cycle: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push
