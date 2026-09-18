@@ -9,13 +9,13 @@
     "fast_above_slow": false
   },
   "TSLA": {
-    "fast_above_slow": true
+    "fast_above_slow": false
   },
   "PLTR": {
     "fast_above_slow": true
   },
   "MSTR": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "DELL": {
     "fast_above_slow": false
@@ -25,5 +25,6 @@
   },
   "SOL/USD": {
     "fast_above_slow": true
-  }
+  },
+  "_demo_trade_done": true
 }
