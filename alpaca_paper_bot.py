@@ -336,7 +336,9 @@ def decide_and_act(symbol, asset_class, session, closes, position, state, open_c
 
 def _submit_entry(symbol, asset_class, session, notional, price):
     if asset_class == "crypto":
-        return place_order(symbol, "buy", notional=notional, order_type="market")
+        # Alpaca requires time_in_force="gtc" for crypto orders -- "day" (the default,
+        # correct for stocks) is rejected with HTTP 422 "invalid crypto time_in_force".
+        return place_order(symbol, "buy", notional=notional, order_type="market", time_in_force="gtc")
     if session == "regular":
         return place_order(symbol, "buy", notional=notional, order_type="market")
     # extended hours: whole-share marketable limit order (notional not supported here)
@@ -349,7 +351,9 @@ def _submit_entry(symbol, asset_class, session, notional, price):
 
 
 def _submit_exit(symbol, asset_class, session, qty, price):
-    if asset_class == "crypto" or session == "regular":
+    if asset_class == "crypto":
+        return place_order(symbol, "sell", qty=qty, order_type="market", time_in_force="gtc")
+    if session == "regular":
         return place_order(symbol, "sell", qty=qty, order_type="market")
     limit_price = price * (1 - EXTENDED_LIMIT_NUDGE)
     return place_order(symbol, "sell", qty=qty, order_type="limit",
