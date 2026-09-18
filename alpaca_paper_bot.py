@@ -49,11 +49,17 @@ CRYPTO_WATCHLIST = ["BTC/USD", "ETH/USD", "SOL/USD"]
 
 TIMEFRAME = "5Min"
 BARS_LOOKBACK = 60          # bars fetched per symbol per cycle (plenty for SMA15 / RSI14)
-SMA_FAST = 5
-SMA_SLOW = 15
+
+# --- DEMO MODE: these 4 values are temporarily loosened so a real trade is far more
+# likely to fire during a short recording window. This is still a genuine, real-data-
+# driven crossover strategy -- just tuned to be more sensitive. The original spec'd
+# values are commented alongside each line. REVERT these to the original values after
+# filming by swapping which number is active.
+SMA_FAST = 3                # DEMO (was 5)
+SMA_SLOW = 8                 # DEMO (was 15)
 RSI_PERIOD = 14
-RSI_BUY_MAX = 70.0          # only buy on golden cross if RSI below this
-RSI_SELL_MIN = 80.0         # exit if RSI rises above this
+RSI_BUY_MAX = 90.0           # DEMO (was 70.0) -- only buy on golden cross if RSI below this
+RSI_SELL_MIN = 95.0          # DEMO (was 80.0) -- exit if RSI rises above this
 STOP_LOSS_PCT = -0.04       # exit if unrealized P/L% <= this
 POSITION_SIZE_PCT = 0.05    # 5% of buying power per new trade
 MAX_OPEN_POSITIONS = 6
