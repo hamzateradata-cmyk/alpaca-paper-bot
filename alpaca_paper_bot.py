@@ -131,25 +131,46 @@ def get_positions():
 
 
 def get_stock_bars(symbols):
+    """Fetch bars ONE SYMBOL AT A TIME. Alpaca's multi-symbol bars endpoint appears to
+    apply the `limit` budget across the combined response rather than per symbol, which
+    starves every symbol except whichever sorts first alphabetically. Fetching separately
+    guarantees each symbol gets its own full BARS_LOOKBACK window every cycle."""
     if not symbols:
         return {}
-    result = _request(
-        "GET",
-        f"{ALPACA_DATA_URL}/v2/stocks/bars",
-        params={"symbols": ",".join(symbols), "timeframe": TIMEFRAME, "limit": BARS_LOOKBACK, "adjustment": "raw"},
-    )
-    return result.get("bars", {})
+    bars = {}
+    for sym in symbols:
+        try:
+            result = _request(
+                "GET",
+                f"{ALPACA_DATA_URL}/v2/stocks/bars",
+                params={"symbols": sym, "timeframe": TIMEFRAME, "limit": BARS_LOOKBACK, "adjustment": "raw"},
+            )
+            sym_bars = result.get("bars", {})
+            bars[sym] = sym_bars.get(sym, [])
+        except RuntimeError as e:
+            print(f"WARNING: could not fetch bars for {sym}: {e}", file=sys.stderr)
+            bars[sym] = []
+    return bars
 
 
 def get_crypto_bars(symbols):
+    """Same per-symbol fetching as get_stock_bars, and for the same reason."""
     if not symbols:
         return {}
-    result = _request(
-        "GET",
-        f"{ALPACA_DATA_URL}/v1beta3/crypto/us/bars",
-        params={"symbols": ",".join(symbols), "timeframe": TIMEFRAME, "limit": BARS_LOOKBACK},
-    )
-    return result.get("bars", {})
+    bars = {}
+    for sym in symbols:
+        try:
+            result = _request(
+                "GET",
+                f"{ALPACA_DATA_URL}/v1beta3/crypto/us/bars",
+                params={"symbols": sym, "timeframe": TIMEFRAME, "limit": BARS_LOOKBACK},
+            )
+            sym_bars = result.get("bars", {})
+            bars[sym] = sym_bars.get(sym, [])
+        except RuntimeError as e:
+            print(f"WARNING: could not fetch bars for {sym}: {e}", file=sys.stderr)
+            bars[sym] = []
+    return bars
 
 
 def place_order(symbol, side, qty=None, notional=None, order_type="market",
