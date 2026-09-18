@@ -44,3 +44,12 @@ ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,orde
 2026-09-18T09:11:04.742819+00:00,2026-09-18T05:11:03.168311-04:00,BTC/USD,crypto,24/7,ERROR,order_submission_failed,77510.161,,,77358.833,77289.08686666666,67.36740729555947,,0,400000.0,"HTTP 422 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":42210000,""message"":""invalid crypto time_in_force""}"
 2026-09-18T09:11:04.849920+00:00,2026-09-18T05:11:03.168311-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
 2026-09-18T09:11:04.849951+00:00,2026-09-18T05:11:03.168311-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-18T13:34:05.458878+00:00,2026-09-18T09:34:05.100171-04:00,NVDA,stock,regular,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-18T13:34:05.459022+00:00,2026-09-18T09:34:05.100171-04:00,TSLA,stock,regular,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-18T13:34:05.459123+00:00,2026-09-18T09:34:05.100171-04:00,AMD,stock,regular,HOLD,no_entry_signal,544.6,,,544.69986,545.4397266666667,38.32295956486708,,0,400000.0,
+2026-09-18T13:34:05.459149+00:00,2026-09-18T09:34:05.100171-04:00,PLTR,stock,regular,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-18T13:34:05.459164+00:00,2026-09-18T09:34:05.100171-04:00,MSTR,stock,regular,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-18T13:34:05.459176+00:00,2026-09-18T09:34:05.100171-04:00,DELL,stock,regular,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-18T13:34:05.499243+00:00,2026-09-18T09:34:05.100171-04:00,BTC/USD,crypto,24/7,HOLD,no_entry_signal,77510.161,,,77358.833,77289.08686666666,67.36740729555947,,0,400000.0,
+2026-09-18T13:34:05.499294+00:00,2026-09-18T09:34:05.100171-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
+2026-09-18T13:34:05.499312+00:00,2026-09-18T09:34:05.100171-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,,,,,,,,0,400000.0,
