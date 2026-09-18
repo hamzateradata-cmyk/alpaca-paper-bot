@@ -49,17 +49,11 @@ CRYPTO_WATCHLIST = ["BTC/USD", "ETH/USD", "SOL/USD"]
 
 TIMEFRAME = "5Min"
 BARS_LOOKBACK = 60          # bars fetched per symbol per cycle (plenty for SMA15 / RSI14)
-
-# --- DEMO MODE: these 4 values are temporarily loosened so a real trade is far more
-# likely to fire during a short recording window. This is still a genuine, real-data-
-# driven crossover strategy -- just tuned to be more sensitive. The original spec'd
-# values are commented alongside each line. REVERT these to the original values after
-# filming by swapping which number is active.
-SMA_FAST = 3                # DEMO (was 5)
-SMA_SLOW = 8                 # DEMO (was 15)
+SMA_FAST = 5
+SMA_SLOW = 15
 RSI_PERIOD = 14
-RSI_BUY_MAX = 90.0           # DEMO (was 70.0) -- only buy on golden cross if RSI below this
-RSI_SELL_MIN = 95.0          # DEMO (was 80.0) -- exit if RSI rises above this
+RSI_BUY_MAX = 70.0          # only buy on golden cross if RSI below this
+RSI_SELL_MIN = 80.0         # exit if RSI rises above this
 STOP_LOSS_PCT = -0.04       # exit if unrealized P/L% <= this
 POSITION_SIZE_PCT = 0.05    # 5% of buying power per new trade
 MAX_OPEN_POSITIONS = 6
@@ -411,6 +405,34 @@ def run_cycle():
         buying_power = float(account["buying_power"])
         positions = get_positions()
         open_count = len(positions)
+
+        # ============================================================================
+        # >>> TEMPORARY DEMO TRADE BLOCK -- DELETE THIS WHOLE BLOCK AFTER RECORDING <
+        # Places one guaranteed $50 BTC/USD buy the next time this runs, purely so you
+        # have something real to show on camera. It only fires ONCE (guarded by a flag
+        # in state.json) so it won't keep buying every 5 minutes while you wait to film.
+        # This bypasses the SMA/RSI strategy entirely -- it is NOT a strategy decision.
+        if not state.get("_demo_trade_done"):
+            try:
+                demo_order = place_order("BTC/USD", "buy", notional=50.0,
+                                          order_type="market", time_in_force="gtc")
+                log_row(writer,
+                        ts_utc=datetime.now(timezone.utc).isoformat(), ts_et=now_et.isoformat(),
+                        symbol="BTC/USD", asset_class="crypto", session="24/7", action="BUY",
+                        reason="manual_demo_trade", qty_or_notional=50.0,
+                        order_id=demo_order.get("id", ""),
+                        open_positions_before=open_count, buying_power=buying_power)
+                open_count += 1
+            except RuntimeError as e:
+                log_row(writer,
+                        ts_utc=datetime.now(timezone.utc).isoformat(), ts_et=now_et.isoformat(),
+                        symbol="BTC/USD", asset_class="crypto", session="24/7", action="ERROR",
+                        reason="manual_demo_trade_failed", error=str(e),
+                        open_positions_before=open_count, buying_power=buying_power)
+            state["_demo_trade_done"] = True
+            positions = get_positions()  # refresh so the rest of this cycle sees the new position
+        # >>> END TEMPORARY DEMO TRADE BLOCK <
+        # ============================================================================
 
         clock = None
         calendar_today = None
