@@ -3,6 +3,6 @@
     "fast_above_slow": true
   },
   "BTC/USD": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   }
 }
