@@ -21,7 +21,7 @@
     "fast_above_slow": false
   },
   "ETH/USD": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "SOL/USD": {
     "fast_above_slow": true
