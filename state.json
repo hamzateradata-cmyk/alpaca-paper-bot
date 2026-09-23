@@ -24,7 +24,7 @@
     "fast_above_slow": true
   },
   "SOL/USD": {
-    "fast_above_slow": true
+    "fast_above_slow": false
   },
   "_demo_trade_done": true
 }
