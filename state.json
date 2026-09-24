@@ -1,12 +1,12 @@
 {
   "AMD": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "BTC/USD": {
     "fast_above_slow": true
   },
   "NVDA": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "TSLA": {
     "fast_above_slow": false
@@ -18,7 +18,7 @@
     "fast_above_slow": true
   },
   "DELL": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "ETH/USD": {
     "fast_above_slow": true
