@@ -1,6 +1,6 @@
 {
   "AMD": {
-    "fast_above_slow": true
+    "fast_above_slow": false
   },
   "BTC/USD": {
     "fast_above_slow": true
@@ -15,7 +15,7 @@
     "fast_above_slow": false
   },
   "MSTR": {
-    "fast_above_slow": true
+    "fast_above_slow": false
   },
   "DELL": {
     "fast_above_slow": true
