@@ -31680,3 +31680,12 @@ ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,orde
 2026-10-01T01:10:16.219489+00:00,2026-09-30T21:10:15.270045-04:00,BTC/USD,crypto,24/7,HOLD,insufficient_bar_history,83534.47,,,83475.651,,,,4,150.67,
 2026-10-01T01:10:16.219550+00:00,2026-09-30T21:10:15.270045-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,2685.4025,,,2684.1994999999997,,,,4,150.67,
 2026-10-01T01:10:16.219573+00:00,2026-09-30T21:10:15.270045-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,117.9555,,,117.9573,,,,4,150.67,
+2026-10-01T01:15:17.528951+00:00,2026-09-30T21:15:16.656091-04:00,NVDA,stock,closed,HOLD,market_closed,,,,,,,,4,150.67,
+2026-10-01T01:15:17.529034+00:00,2026-09-30T21:15:16.656091-04:00,TSLA,stock,closed,HOLD,market_closed,,,,,,,,4,150.67,
+2026-10-01T01:15:17.529054+00:00,2026-09-30T21:15:16.656091-04:00,AMD,stock,closed,HOLD,market_closed,,,,,,,,4,150.67,
+2026-10-01T01:15:17.529069+00:00,2026-09-30T21:15:16.656091-04:00,PLTR,stock,closed,HOLD,market_closed,,,,,,,,4,150.67,
+2026-10-01T01:15:17.529082+00:00,2026-09-30T21:15:16.656091-04:00,MSTR,stock,closed,HOLD,market_closed,,,,,,,,4,150.67,
+2026-10-01T01:15:17.529094+00:00,2026-09-30T21:15:16.656091-04:00,DELL,stock,closed,HOLD,market_closed,,,,,,,,4,150.67,
+2026-10-01T01:15:18.161515+00:00,2026-09-30T21:15:16.656091-04:00,BTC/USD,crypto,24/7,ERROR,order_submission_failed,83533.5075,,,83485.4415,83460.99623333334,56.51161373962161,,4,150.67,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-10-01T01:15:18.387863+00:00,2026-09-30T21:15:16.656091-04:00,ETH/USD,crypto,24/7,ERROR,order_submission_failed,2686.7,,,2684.5695,2682.6952,59.3057763645992,,4,150.67,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-10-01T01:15:18.598439+00:00,2026-09-30T21:15:16.656091-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,117.9555,,,117.9573,,,,4,150.67,
