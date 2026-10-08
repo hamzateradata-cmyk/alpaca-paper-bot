@@ -49698,3 +49698,12 @@ ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,orde
 2026-10-08T01:10:17.375226+00:00,2026-10-07T21:10:15.984672-04:00,BTC/USD,crypto,24/7,HOLD,insufficient_bar_history,83419.6925,,,83377.12909999999,,,,3,160.44,
 2026-10-08T01:10:17.375278+00:00,2026-10-07T21:10:15.984672-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,2583.1745,,,2577.79,,,,3,160.44,
 2026-10-08T01:10:17.375305+00:00,2026-10-07T21:10:15.984672-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,116.7135,,,116.49269999999999,,,,3,160.44,
+2026-10-08T01:15:14.884860+00:00,2026-10-07T21:15:14.366656-04:00,NVDA,stock,closed,HOLD,market_closed,,,,,,,,3,160.44,
+2026-10-08T01:15:14.884930+00:00,2026-10-07T21:15:14.366656-04:00,TSLA,stock,closed,HOLD,market_closed,,,,,,,,3,160.44,
+2026-10-08T01:15:14.884943+00:00,2026-10-07T21:15:14.366656-04:00,AMD,stock,closed,HOLD,market_closed,,,,,,,,3,160.44,
+2026-10-08T01:15:14.884953+00:00,2026-10-07T21:15:14.366656-04:00,PLTR,stock,closed,HOLD,market_closed,,,,,,,,3,160.44,
+2026-10-08T01:15:14.884960+00:00,2026-10-07T21:15:14.366656-04:00,MSTR,stock,closed,HOLD,market_closed,,,,,,,,3,160.44,
+2026-10-08T01:15:14.884967+00:00,2026-10-07T21:15:14.366656-04:00,DELL,stock,closed,HOLD,market_closed,,,,,,,,3,160.44,
+2026-10-08T01:15:14.981429+00:00,2026-10-07T21:15:14.366656-04:00,BTC/USD,crypto,24/7,ERROR,order_submission_failed,83331.27,,,83375.00289999999,83284.05986666666,58.088974731432536,,3,160.44,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-10-08T01:15:15.232004+00:00,2026-10-07T21:15:14.366656-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,2580.915,,,2579.054,,,,3,160.44,
+2026-10-08T01:15:15.232055+00:00,2026-10-07T21:15:14.366656-04:00,SOL/USD,crypto,24/7,ERROR,order_submission_failed,116.599,,,116.54249999999999,116.34883333333333,65.21577380952459,,3,160.44,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
