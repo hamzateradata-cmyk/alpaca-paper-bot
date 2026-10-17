@@ -3,7 +3,7 @@
     "fast_above_slow": false
   },
   "BTC/USD": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "NVDA": {
     "fast_above_slow": false
