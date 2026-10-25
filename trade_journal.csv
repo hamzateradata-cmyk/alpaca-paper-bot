@@ -78543,3 +78543,12 @@ ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,orde
 2026-10-25T06:13:02.506006+00:00,2026-10-25T02:13:01.491315-04:00,BTC/USD,crypto,24/7,ERROR,order_submission_failed,80817.165,,,80829.7772,80783.01456666666,53.89519275952035,,3,158.76,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
 2026-10-25T06:13:02.637144+00:00,2026-10-25T02:13:01.491315-04:00,ETH/USD,crypto,24/7,ERROR,order_submission_failed,2365.285,,,2365.5061,2362.4678333333336,63.35720538178334,,3,158.76,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
 2026-10-25T06:13:03.056756+00:00,2026-10-25T02:13:01.491315-04:00,SOL/USD,crypto,24/7,ERROR,order_submission_failed,102.491,,,102.52940000000001,102.4106,55.65468740221626,,3,158.76,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-10-25T11:23:20.581118+00:00,2026-10-25T07:23:19.854787-04:00,NVDA,stock,closed,HOLD,market_closed,,,,,,,,3,158.76,
+2026-10-25T11:23:20.581227+00:00,2026-10-25T07:23:19.854787-04:00,TSLA,stock,closed,HOLD,market_closed,,,,,,,,3,158.76,
+2026-10-25T11:23:20.581247+00:00,2026-10-25T07:23:19.854787-04:00,AMD,stock,closed,HOLD,market_closed,,,,,,,,3,158.76,
+2026-10-25T11:23:20.581261+00:00,2026-10-25T07:23:19.854787-04:00,PLTR,stock,closed,HOLD,market_closed,,,,,,,,3,158.76,
+2026-10-25T11:23:20.581274+00:00,2026-10-25T07:23:19.854787-04:00,MSTR,stock,closed,HOLD,market_closed,,,,,,,,3,158.76,
+2026-10-25T11:23:20.581287+00:00,2026-10-25T07:23:19.854787-04:00,DELL,stock,closed,HOLD,market_closed,,,,,,,,3,158.76,
+2026-10-25T11:23:21.114807+00:00,2026-10-25T07:23:19.854787-04:00,BTC/USD,crypto,24/7,HOLD,no_entry_signal,80817.165,,,80829.7772,80783.01456666666,53.89519275952035,,3,158.76,
+2026-10-25T11:23:21.114891+00:00,2026-10-25T07:23:19.854787-04:00,ETH/USD,crypto,24/7,HOLD,no_entry_signal,2365.285,,,2365.5061,2362.4678333333336,63.35720538178334,,3,158.76,
+2026-10-25T11:23:21.114937+00:00,2026-10-25T07:23:19.854787-04:00,SOL/USD,crypto,24/7,HOLD,no_entry_signal,102.491,,,102.52940000000001,102.4106,55.65468740221626,,3,158.76,
