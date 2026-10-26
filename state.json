@@ -9,10 +9,10 @@
     "fast_above_slow": false
   },
   "TSLA": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "PLTR": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "MSTR": {
     "fast_above_slow": false
