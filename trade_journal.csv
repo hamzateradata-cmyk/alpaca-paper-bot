@@ -78723,3 +78723,12 @@ ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,orde
 2026-10-29T00:59:46.666406+00:00,2026-10-28T20:59:45.761056-04:00,BTC/USD,crypto,24/7,HOLD,insufficient_bar_history,81021.35,,,81059.7095,,,,4,150.19,
 2026-10-29T00:59:46.666466+00:00,2026-10-28T20:59:45.761056-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,2351.894,,,2353.505,,,,4,150.19,
 2026-10-29T00:59:46.666482+00:00,2026-10-28T20:59:45.761056-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,101.85,,,101.9122,,,,4,150.19,
+2026-10-29T06:46:50.633059+00:00,2026-10-29T02:46:49.889199-04:00,NVDA,stock,closed,HOLD,market_closed,,,,,,,,4,150.0,
+2026-10-29T06:46:50.633172+00:00,2026-10-29T02:46:49.889199-04:00,TSLA,stock,closed,HOLD,market_closed,,,,,,,,4,150.0,
+2026-10-29T06:46:50.633185+00:00,2026-10-29T02:46:49.889199-04:00,AMD,stock,closed,HOLD,market_closed,,,,,,,,4,150.0,
+2026-10-29T06:46:50.633194+00:00,2026-10-29T02:46:49.889199-04:00,PLTR,stock,closed,HOLD,market_closed,,,,,,,,4,150.0,
+2026-10-29T06:46:50.633201+00:00,2026-10-29T02:46:49.889199-04:00,MSTR,stock,closed,HOLD,market_closed,,,,,,,,4,150.0,
+2026-10-29T06:46:50.633208+00:00,2026-10-29T02:46:49.889199-04:00,DELL,stock,closed,HOLD,market_closed,,,,,,,,4,150.0,
+2026-10-29T06:46:51.192611+00:00,2026-10-29T02:46:49.889199-04:00,BTC/USD,crypto,24/7,ERROR,order_submission_failed,80144.505,,,80045.3276,79859.565,64.768598018579,,4,150.0,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-10-29T06:46:51.411541+00:00,2026-10-29T02:46:49.889199-04:00,ETH/USD,crypto,24/7,ERROR,order_submission_failed,2318.7385,,,2317.075,2309.8947,62.524855937111845,,4,150.0,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-10-29T06:46:51.601682+00:00,2026-10-29T02:46:49.889199-04:00,SOL/USD,crypto,24/7,HOLD,no_entry_signal,100.053,,,99.99488,99.71217,57.937563489877306,,4,150.0,
