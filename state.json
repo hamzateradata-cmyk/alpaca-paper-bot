@@ -9,16 +9,16 @@
     "fast_above_slow": false
   },
   "TSLA": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "PLTR": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "MSTR": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "DELL": {
-    "fast_above_slow": false
+    "fast_above_slow": true
   },
   "ETH/USD": {
     "fast_above_slow": true
