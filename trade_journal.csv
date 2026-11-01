@@ -78849,3 +78849,12 @@ ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,orde
 2026-11-01T00:30:25.543711+00:00,2026-10-31T20:30:24.665053-04:00,BTC/USD,crypto,24/7,HOLD,insufficient_bar_history,77480.8865,,,77430.70629999999,,,,4,31.12,
 2026-11-01T00:30:25.543765+00:00,2026-10-31T20:30:24.665053-04:00,ETH/USD,crypto,24/7,HOLD,insufficient_bar_history,2253.49,,,2253.0366000000004,,,,4,31.12,
 2026-11-01T00:30:25.543781+00:00,2026-10-31T20:30:24.665053-04:00,SOL/USD,crypto,24/7,HOLD,insufficient_bar_history,95.36405,,,95.30611999999999,,,,4,31.12,
+2026-11-01T06:38:37.796203+00:00,2026-11-01T01:38:37.297638-05:00,NVDA,stock,closed,HOLD,market_closed,,,,,,,,4,31.12,
+2026-11-01T06:38:37.796289+00:00,2026-11-01T01:38:37.297638-05:00,TSLA,stock,closed,HOLD,market_closed,,,,,,,,4,31.12,
+2026-11-01T06:38:37.796300+00:00,2026-11-01T01:38:37.297638-05:00,AMD,stock,closed,HOLD,market_closed,,,,,,,,4,31.12,
+2026-11-01T06:38:37.796307+00:00,2026-11-01T01:38:37.297638-05:00,PLTR,stock,closed,HOLD,market_closed,,,,,,,,4,31.12,
+2026-11-01T06:38:37.796313+00:00,2026-11-01T01:38:37.297638-05:00,MSTR,stock,closed,HOLD,market_closed,,,,,,,,4,31.12,
+2026-11-01T06:38:37.796318+00:00,2026-11-01T01:38:37.297638-05:00,DELL,stock,closed,HOLD,market_closed,,,,,,,,4,31.12,
+2026-11-01T06:38:38.223566+00:00,2026-11-01T01:38:37.297638-05:00,BTC/USD,crypto,24/7,ERROR,order_submission_failed,77670.86,,,77694.0843,77667.33186666666,52.18384110810089,,4,31.12,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-11-01T06:38:38.382652+00:00,2026-11-01T01:38:37.297638-05:00,ETH/USD,crypto,24/7,ERROR,order_submission_failed,2263.615,,,2264.5044000000003,2264.3250666666663,46.907630121823004,,4,31.12,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-11-01T06:38:38.491416+00:00,2026-11-01T01:38:37.297638-05:00,SOL/USD,crypto,24/7,HOLD,no_entry_signal,95.326,,,95.37957,95.38401,44.47555110856169,,4,31.12,
