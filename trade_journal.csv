@@ -78984,3 +78984,12 @@ ts_utc,ts_et,symbol,asset_class,session,action,reason,price,qty_or_notional,orde
 2026-11-05T01:36:48.275105+00:00,2026-11-04T20:36:46.689293-05:00,BTC/USD,crypto,24/7,HOLD,no_entry_signal,80482.93,,,80387.89439999999,80501.58159999999,47.87360552388461,,3,38.19,
 2026-11-05T01:36:48.275177+00:00,2026-11-04T20:36:46.689293-05:00,ETH/USD,crypto,24/7,HOLD,no_entry_signal,2420.97,,,2415.5649999999996,2420.1363333333334,50.61462281714,,3,38.19,
 2026-11-05T01:36:48.275205+00:00,2026-11-04T20:36:46.689293-05:00,SOL/USD,crypto,24/7,HOLD,no_entry_signal,95.7074,,,95.54444,95.71822666666667,51.77194299057999,,3,38.19,
+2026-11-05T08:27:07.765371+00:00,2026-11-05T03:27:07.034975-05:00,NVDA,stock,closed,HOLD,market_closed,,,,,,,,3,38.19,
+2026-11-05T08:27:07.765489+00:00,2026-11-05T03:27:07.034975-05:00,TSLA,stock,closed,HOLD,market_closed,,,,,,,,3,38.19,
+2026-11-05T08:27:07.765509+00:00,2026-11-05T03:27:07.034975-05:00,AMD,stock,closed,HOLD,market_closed,,,,,,,,3,38.19,
+2026-11-05T08:27:07.765521+00:00,2026-11-05T03:27:07.034975-05:00,PLTR,stock,closed,HOLD,market_closed,,,,,,,,3,38.19,
+2026-11-05T08:27:07.765532+00:00,2026-11-05T03:27:07.034975-05:00,MSTR,stock,closed,HOLD,market_closed,,,,,,,,3,38.19,
+2026-11-05T08:27:07.765543+00:00,2026-11-05T03:27:07.034975-05:00,DELL,stock,closed,HOLD,market_closed,,,,,,,,3,38.19,
+2026-11-05T08:27:08.364692+00:00,2026-11-05T03:27:07.034975-05:00,BTC/USD,crypto,24/7,ERROR,order_submission_failed,80435.95,,,80525.26070000001,80451.52746666667,45.575454473253025,,3,38.19,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-11-05T08:27:08.548189+00:00,2026-11-05T03:27:07.034975-05:00,ETH/USD,crypto,24/7,ERROR,order_submission_failed,2422.281,,,2425.443,2422.3417333333337,46.90244921053091,,3,38.19,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
+2026-11-05T08:27:08.722972+00:00,2026-11-05T03:27:07.034975-05:00,SOL/USD,crypto,24/7,ERROR,order_submission_failed,95.94855,,,96.12338,96.09555,44.36946905958368,,3,38.19,"HTTP 403 on POST https://paper-api.alpaca.markets/v2/orders: {""code"":40310000,""message"":""cost basis must be \u003e= minimal amount of order 10""}"
